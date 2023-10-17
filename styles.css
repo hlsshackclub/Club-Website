@@ -2,18 +2,31 @@
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
-.nav-link{
-    color: white;
+nav {
+  background-color: #343A40;
+  height: 3.5rem;
+  width: 100%;
+  top: 0;
+  position: sticky;
+  display: flex;
+  justify-content: flex-start;
+  & .logo {
+    margin: auto 0;
+    padding: 0 1rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+  }
+  & .dropdown {
+    margin: auto 0;
+    padding: 0 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255,255,255,.5);
+    text-decoration: none;
+  }
 }
-.nav-link:hover{
-    color: white;
-}
-
-.jumbotron{
-    text-align: center;
-    z-index: 100;
-}
-
 h1, h2, h3{
     text-align: center;
 }
@@ -22,7 +35,6 @@ h1, h2, h3{
     background-color: #343A40;
     color: grey;
 }
-
 #sidebar a{
     color: white;
     display: block;
@@ -85,4 +97,40 @@ tr:hover{
 .notallowed:hover{
     cursor: not-allowed;
 }
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
 
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  border: 1px solid rgba(0,0,0,.25);
+  border-radius: 5px;
+  min-width: 160px;
+  padding: 0.5rem 0;
+  z-index: 1;
+  grid-auto-columns: auto;
+  gap: 0;
+  & a {
+    padding: 0.5rem 0;
+  	color: black;
+  	text-align: center;
+    width: 100%;
+    text-decoration: none;
+    &:hover {
+      background-color: #eee;
+    }
+  }
+}
+
+.dropdown:hover {
+  & span {
+    color: rgba(255,255,255,.75);
+  }
+  cursor: pointer;
+  .dropdown-content {
+    display: grid;
+  }
+}
