@@ -71,14 +71,22 @@ nav {
     padding: 0 1rem;
     display: flex;
     justify-content: flex-start;
+    filter: drop-shadow(0 0 0.1rem rgba(0,0,0,0.5));
   }
-  & .dropdown {
+  & .nav-links {
     margin: auto 0;
     padding: 0 1rem;
     font-size: 1rem;
     font-weight: 400;
     color: rgba(255,255,255,.5);
     text-decoration: none;
+    & a {
+      margin: auto 0;
+      font-size: 1rem;
+      font-weight: 400;
+      color: rgba(255,255,255,.5);
+      text-decoration: none;
+    }
   }
 }
 
