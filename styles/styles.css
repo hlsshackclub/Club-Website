@@ -69,10 +69,8 @@ nav {
   & .logo {
     margin: auto 0;
     padding: 0 1rem;
-    font-size: 1.25rem;
-    font-weight: 400;
-    color: #fff;
-    text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
   }
   & .dropdown {
     margin: auto 0;
