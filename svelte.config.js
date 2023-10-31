@@ -9,7 +9,7 @@ const config = {
 			base: process.env.NODE_ENV === "production" ? "/Club-Website" : "",
 		}
 	},
-	preprocess: preprocess()
+	preprocess: preprocess({ defaults: { script: 'typescript' }})
 };
 
 export default config;
