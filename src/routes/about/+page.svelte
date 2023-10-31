@@ -1,6 +1,9 @@
 <script>
   import Nav from '../../components/Nav.svelte';
 </script>
+<style lang="scss">
+  @use 'src/styles/global.scss' as *;
+</style>
 <Nav />
 <main>
   <p>about page</p>

@@ -1,7 +1,8 @@
 <script>
   import Nav from '.././components/Nav.svelte';
 </script>
-<style>
+<style lang="scss">
+  @use 'src/styles/global.scss' as *;
   #content {
     display: grid;
     justify-content: center;
