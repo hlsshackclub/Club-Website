@@ -11,7 +11,7 @@
     <div>
       <h2>Our Team</h2>
       <div class="wrapper">
-        <p>Going to put memebers of the executive here</p>
+        <p>Going to put members of the executive here</p>
       </div>
     </div>
     <div>
