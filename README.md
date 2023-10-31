@@ -1,5 +1,18 @@
 # Club Website
-Here are the instructions for developing the club website locally:
+## Development instructions
+Node.js is required to develop this project.
+
+Install Node.js on Windows through the Terminal:
+```pwsh
+winget install nodejs
+```
+Or on Arch Linux 💙:
+```bash
+sudo pacman -S nodejs
+```
+Or just head to https://nodejs.org/en/download and follow the instructions from there.
+
+To develop on this SvelteKit project, after cloning the Git repository (through a terminal or VSCode):
 ```bash
 # install pnpm and typescript globally
 npm i -g pnpm typescript
