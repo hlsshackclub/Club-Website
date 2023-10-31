@@ -93,7 +93,7 @@
   <h1 id="title">Heart Lake Hack Club</h1>
 </header>
 <nav>
-  <a class="logo" href="{base}">
+  <a class="logo" href="{base || "/"}">
     <img style="height: 3rem;" src="{base}/hackclub.svg" alt="Hack Club Logo">
   </a>
   <div class="dropdown nav-links">
