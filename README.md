@@ -15,7 +15,7 @@ Or just head to https://nodejs.org/en/download and follow the instructions from 
 To develop on this SvelteKit project, after cloning the Git repository (through a terminal or VSCode):
 ```bash
 # install pnpm and typescript globally
-pnpm i -g pnpm typescript
+npm i -g pnpm typescript
 # install dependencies
 pnpm i
 # start the server
