@@ -1,6 +1,9 @@
 <script lang="ts">
   import Content from "$components/Content.svelte";
   import type { Box } from "$components/Content.svelte";
+  import Gallery from "$components/Gallery.svelte";
+  import type { GalleryItem } from "$components/Gallery.svelte";
+
   let boxes: Box[] = [
     {
       title: 'Test',
@@ -17,8 +20,32 @@
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
       ]
+    },
+    {
+      title: 'Test',
+      paragraphs: [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      ]
     }
   ];
+
+  let galleryItems: GalleryItem[] = [
+  {
+    imagePath: 'https://placehold.co/400x400',
+    caption: 'This is image 1'
+  },
+  {
+    imagePath: 'https://placehold.co/400x400',
+    caption: 'This is image 2'
+  },
+  {
+    imagePath: 'https://placehold.co/400x400',
+    caption: 'This is image 3'
+  },
+];
+
 </script>
 <p>This is our website</p>
 <p>This is a test addition to the website!</p>
@@ -27,4 +54,5 @@
 <p>Hello this message is from Jonah Perez.</p>
 <p>hi this is glae</p>
 <p>Hi im dravid</p>
-<Content boxes={boxes} />
+<Content boxes={boxes} /> <!-- boxes is the prop we exported as a variable in Content.svelte -->
+<Gallery title="Test Gallery" galleryItems={galleryItems} />

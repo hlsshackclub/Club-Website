@@ -21,6 +21,7 @@
     position: sticky;
     display: flex;
     justify-content: flex-start;
+    z-index: 69;
     & .logo {
       margin: auto 0;
       padding: 0 1rem;
