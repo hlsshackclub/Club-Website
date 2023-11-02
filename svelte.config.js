@@ -1,5 +1,6 @@
 import adapter from '@sveltejs/adapter-static';
 import preprocess from 'svelte-preprocess';
+
 const config = {
 	kit: {
 		adapter: adapter({
@@ -7,7 +8,10 @@ const config = {
 		}),
 		paths: {
 			base: process.env.NODE_ENV === "production" ? "/Club-Website" : "",
-		}
+		},
+		alias: {
+      '$components': "src/components",
+    },
 	},
 	preprocess: preprocess()
 };

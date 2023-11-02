@@ -19,6 +19,9 @@ devDependencies:
   '@sveltejs/kit':
     specifier: ^1.20.4
     version: 1.27.2(svelte@4.2.2)(vite@4.5.0)
+  '@tsconfig/svelte':
+    specifier: ^5.0.2
+    version: 5.0.2
   sass:
     specifier: ^1.69.5
     version: 1.69.5
@@ -32,7 +35,7 @@ devDependencies:
     specifier: ^2.4.1
     version: 2.6.2
   typescript:
-    specifier: ^5.0.0
+    specifier: ^5.2.2
     version: 5.2.2
   vite:
     specifier: ^4.4.2
@@ -379,6 +382,10 @@ packages:
       vitefu: 0.2.5(vite@4.5.0)
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /@tsconfig/svelte@5.0.2:
+    resolution: {integrity: sha512-BRbo1fOtyVbhfLyuCWw6wAWp+U8UQle+ZXu84MYYWzYSEB28dyfnRBIE99eoG+qdAC0po6L2ScIEivcT07UaMA==}
     dev: true
 
   /@types/cookie@0.5.3:
