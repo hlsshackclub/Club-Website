@@ -16,6 +16,7 @@
     grid-auto-columns: 1fr 1fr;
     grid-auto-flow: column;
     gap: 1rem;
+    margin-top: 1rem;
     & div {
       & h2 {
         text-align: center;
@@ -30,6 +31,11 @@
         padding: 1rem;
         box-shadow: rgba(0, 0, 0, 0.125) 0px 4px 8px;
       }
+    }
+  }
+  @media only screen and (width < 768px) {
+    #content {
+      grid-auto-flow: row;
     }
   }
 </style>
