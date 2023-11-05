@@ -5,7 +5,7 @@
   export let data; // this is a prop that updates when the page loads/changes
 </script>
 <style lang="scss">
-  @use 'src/styles/global.scss' as *;
+  @import url('src/styles/global.scss');
 </style>
 <Nav />
 <main>

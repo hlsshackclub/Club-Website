@@ -40,4 +40,11 @@
 main {
   margin: 0 5vw;
   padding: 0;
+  & > div {
+    display: flex;
+    flex-direction: column;
+    & > p {
+      margin-bottom: 0;
+    }
+  }  
 }
