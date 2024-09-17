@@ -1,0 +1,26 @@
+# Site settings
+title: Heart Lake Hack Club
+description: A place for students to grow their computer science skills.
+baseurl: "" # Leave empty if hosting at root
+url: "https://hlsshackclub.github.io/Club-Website/" # Replace with your GitHub Pages URL
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Include files
+include:
+  - _includes/header.html # Ensure the header.html can be included properly
+
+# Exclude these files from the build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+
+# Plugins
+plugins:
+  - jekyll-feed # Optional: adds RSS feed support
+
+# Permalinks
+permalink: pretty # Use pretty URLs (no .html at the end)

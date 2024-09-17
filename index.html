@@ -7,36 +7,22 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1 class="title">Heart Lake Hack Club</h1>
-</header>
-<div class="navbar">
-  <div class="logo">
-    <a href="index.html"><img style="height: 3rem;" src="static/Logo.png" alt="Logo" class="logo-img"></a>
-  </div>
-  <ul>
-    <li><a href="https://github.com/hlsshackclub" target="_blank" rel="noopener noreferrer">Github</a></li>
-    <li><a href="About Us/">About Us</a></li>
-  </ul>
-</div>
-  <main>
+    <main>
+        {% include header.html %}
+        <section class="cards" id="Members">
+        <div class="card"><p></p></div>
+        <div class="card"><p></p></div>
+        </section>
 
-    <section class="cards">
-      <div class="card">HLSS Hack Club is all about providing students with an opportunity to grow their computer science skills, regardless of experience. We ensure that beginners and pros have a chance to learn through engaging interactive lessons that make the process enjoyable. Moreover, we aim to support students to facilitate a carrer in computer science/information technology.
-        <br><br>Throughout the year, we hope to host fun activities such as scavenger hunts, robotics competition, and a hackathon. Additionally, our ties with Hack Club allow us to have acess to resouces such as, custom PCB's, Blot drawing machine and this very own website.
-        <br><br>If you haven't done so already, join our google classroom (code: sau2mcq) and follow us on instagram @hlsshackclub</p></div>
-      <div class="card"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p></div>
-    </section>
-
-    <section class="gallery">
-      <h2>Test Gallery</h2>
-      <div class="image-gallery">
-        <div class="image-box">400 x 400</div>
-        <div class="image-box">400 x 400</div>
-        <div class="image-box">400 x 400</div>
-      </div>
-    </section>
-  </main>
+        <!-- <section class="gallery">
+        <h2>Test Gallery</h2>
+        <div class="image-gallery">
+            <div class="image-box">400 x 400</div>
+            <div class="image-box">400 x 400</div>
+            <div class="image-box">400 x 400</div>
+        </div>
+        </section> -->
+    </main>
 
 </body>
 </html>
