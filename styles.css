@@ -23,7 +23,14 @@
     font-family: Kollektif, sans-serif;
 }
 
+html {
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
 body {
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal overflow */
     font-family: Arial, sans-serif;
     margin: 0;
     background-color: #1c1c1c;
@@ -31,6 +38,8 @@ body {
 }
 
 main {
+    position: relative;
+    z-index: 1; /* Ensure main content does not cover the navbar */
     padding: 0 2rem 0 2rem;
 }
 
@@ -38,6 +47,7 @@ header {
     background: linear-gradient(45deg, #844ef2, #ee874d);
     color: white;
     text-align: center;
+    overflow: visible;
 }
 
 .title {
@@ -49,6 +59,7 @@ header {
 }
 
 .navbar {
+    position: -webkit-sticky;
     position: sticky;
     background: linear-gradient(45deg, hsl(260, 86%, 50%), hsl(22, 83%, 49%));
     top: 0;
@@ -114,11 +125,4 @@ header {
     height: 400px;
     font-size: 1.5rem;
     border-radius: 10px;
-}
-
-object {
-    height: auto;
-    width: 100%;
-    border: none;
-    display: block;
 }
