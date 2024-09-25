@@ -49,6 +49,11 @@ plugins:
 include:
   - _includes/header.html # Ensure the header.html can be included properly
 
+collections:
+  members:
+    output: true
+    permalink: /members/:name/
+
 # Exclude these files from the build
 exclude:
   - README.md

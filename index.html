@@ -3,6 +3,15 @@ layout: default
 ---
 
 <section class="cards" id="Members">
-<div class="card"><p></p></div>
-<div class="card"><p></p></div>
+    {% for member in site.members %}
+        <div class="card">
+            <a href="{{ site.baseurl }}{{ member.url }}">
+                <h3>{{ member.name }}</h3>
+                <div class="sub-card">
+                    <img src="{{ site.baseurl }}{{ member.picture }}" alt="no picture">
+                    <p>{{ member.bio }}</p>
+                </div>
+            </a>
+        </div>
+    {% endfor %}
 </section>
