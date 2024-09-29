@@ -2,11 +2,6 @@
 
 Welcome to the HLSS Hack Club website repository! This project is designed to provide students with an opportunity to grow their computer science skills through engaging and interactive lessons, activities, and events.
 
-## Table of Contents
-
-- [About](#about)
-- [Creating a Member Page](#Creating a Member Page)
-
 ## About
 
 HLSS Hack Club is all about providing students with an opportunity to grow their computer science skills, regardless of experience. We ensure that beginners and pros have a chance to learn through engaging interactive lessons that make the process enjoyable. Moreover, we aim to support students to facilitate a career in computer science/information technology.
