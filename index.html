@@ -1,17 +1,37 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heart Lake Hack Club</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="header"></div>
+    <script src="header.js"></script>
 
-<section class="cards" id="Members">
-    {% for member in site.members %}
-        <div class="card">
-            <a href="{{ site.baseurl }}{{ member.url }}">
-                <h3>{{ member.name }}</h3>
-                <div class="sub-card">
-                    <img src="{{ site.baseurl }}{{ member.picture }}" alt="no picture">
-                    <p>{{ member.bio }}</p>
-                </div>
-            </a>
-        </div>
-    {% endfor %}
-</section>
+    <section class="cards" id="Members"></section>
+
+    <script>
+        fetch('members.json')
+            .then(response => response.json())
+            .then(data => {
+                const membersSection = document.getElementById('Members');
+                data.forEach(member => {
+                    const memberCard = `
+                        <div class="card">
+                            <a href="members/${member.name}/">
+                                <h3>${member.name}</h3>
+                                <div class="sub-card">
+                                    <img src="${member.picture}" alt="no picture">
+                                    <p>${member.bio}</p>
+                                </div>
+                            </a>
+                        </div>`;
+                    membersSection.innerHTML += memberCard;
+                });
+            });
+    </script>
+
+</body>
+</html>

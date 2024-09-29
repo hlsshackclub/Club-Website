@@ -18,81 +18,27 @@ Throughout the year, we hope to host fun activities such as scavenger hunts, rob
 
 If you haven't done so already, join our Google Classroom (code: sau2mcq) and follow us on Instagram @hlsshackclub.
 
-## Getting Started
+## Creating a Member Page
 
-To get a local copy up and running follow these simple steps.
+To create your own member page, follow these steps:
 
-### Prerequisites
+1. **Create a Directory**: Create a new directory under the `members` directory with your name. For example, `members/YourName/`.
 
-- Ruby
-- Jekyll
-- Bundler
-
-### Installation
-
-1. Clone the repo
-   ```sh
-   git clone https://github.com/your_username/hlss-hack-club.git
-2. Install Jekyll and Bundler
-    ```sh
-    gem install jekyll bundler
-3. Install dependencies
-    ```sh
-    bundle install
-4. Serve the site locally
-    ```sh
-    bundle exec jekyll serve
-5. Open your browser and navigate to `http://localhost:4000/Club-Website/`
-
-### Making a Page
-
-To create your own member page on the website, follow these steps:
-
-1. **Create a New HTML File in the `_members` Directory**
-
-   Navigate to the `_members` directory and create a new HTML file named after yourself (e.g., `JohnDoe.html`).
-
-   ```sh
-   cd _members
-   touch JohnDoe.html
-2. **Add Your Content**
-   Open the newly created HTML file and add your content. You can use the following template as a starting point:
-   ```html
-    ---
-    layout: member
-    name: John Doe
-    title: Member
-    ---
-
-    <h1>John Doe</h1>
-    <p>Welcome to my page!</p>
-   ```
-    Make sure to replace John Doe with your actual name and add any additional content you want to include on your page.
-3. **Create a Directory in the `members` Directory**
-   Navigate to the `members` directory and create a new folder named after yourself (e.g., `JohnDoe`). This folder will contain any additional resources (e.g., images, files) you want to include on your page.
-   ```sh
-   cd ../members
-   mkdir JohnDoe
-4. **Add Additional Resources**
-   Add any additional resources you want to include on your page to the directory you created in the previous step. For example, you can add an image of yourself named `profile.jpg`. Any pages other than your home page will also go here.
-   ```sh
-   cp /path/to/your/image.jpg JohnDoe/profile.jpg
-5. **Link Resources in Your HTML File**
-   If you added any additional resources, make sure to link to them in your HTML file. For example, you can add an image to your page with the following code:
-   ```html
-    <img src="{{ site.baseurl }}/members/JohnDoe/profile.jpg" alt="John Doe">
-   ```
-6. **Preview Your Changes**
-    Once you've added your content and resources, preview your changes by serving the site locally and navigating to your page in the browser.
-    ```sh
-     bundle exec jekyll serve
+2. **Add an `index.html` File**: Inside your directory, create an `index.html` file. This file will contain your personal information. Here is a template you can use:
+    ```html
+    <h1>Your Name</h1>
+    <p>Write a brief bio about yourself here.</p>
     ```
-    Open your browser and navigate to `http://localhost:4000/Club-Website/members/JohnDoe.html` to view your page.
-7. **Commit Your Changes**
-   Once you've added your content and resources, commit your changes to your fork of the repository and create a pull request to merge them into the main repository.
-   ```sh
-    git add .
-    git commit -m "Add John Doe member page"
-    git push
-8. **Create a Pull Request**
-    Create a pull request to merge your changes into the main repository. Be sure to include a description of the changes you made and any additional context that might be helpful for reviewers.
+
+3. **Update `members.json`**: Add your information to the `members.json` file. This file is used to display member cards on the main page. Here is an example entry:
+    ```json
+    {
+      "name": "Your Name",
+      "bio": "Your brief bio",
+      "picture": "members/YourName/YourPicture.jpg"
+    }
+    ```
+
+4. **Add Your Picture**: Place your picture in your directory. Make sure the path in `members.json` matches the location of your picture.
+
+5. **Commit Your Changes**: After making these changes, commit them to the repository.
