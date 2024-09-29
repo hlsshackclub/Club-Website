@@ -5,10 +5,7 @@ Welcome to the HLSS Hack Club website repository! This project is designed to pr
 ## Table of Contents
 
 - [About](#about)
-- [Getting Started](#getting-started)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
+- [Creating a Member Page](#Creating a Member Page)
 
 ## About
 
