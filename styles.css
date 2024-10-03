@@ -98,7 +98,7 @@ header {
     background-color: #333;
     padding: 20px;
     border-radius: 10px;
-    flex: 1 1 300px; /* Allow cards to grow and shrink, with a minimum width of 300px */
+    flex: 1 1 20rem; /* Allow cards to grow and shrink, with a minimum width of 300px */
     max-width: 40%; /* Set a maximum width for larger screens */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -109,7 +109,7 @@ header {
 }
 
 .card img {
-    max-width: 300px;
+    max-width: 20rem;
     border-radius: 10px;
 }
 
