@@ -2,14 +2,6 @@
 
 Welcome to the HLSS Hack Club website repository! This project is designed to provide students with an opportunity to grow their computer science skills through engaging and interactive lessons, activities, and events.
 
-## Table of Contents
-
-- [About](#about)
-- [Getting Started](#getting-started)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## About
 
 HLSS Hack Club is all about providing students with an opportunity to grow their computer science skills, regardless of experience. We ensure that beginners and pros have a chance to learn through engaging interactive lessons that make the process enjoyable. Moreover, we aim to support students to facilitate a career in computer science/information technology.
@@ -41,4 +33,10 @@ To create your own member page, follow these steps:
 
 4. **Add Your Picture**: Place your picture in your directory. Make sure the path in `members.json` matches the location of your picture.
 
-5. **Commit Your Changes**: After making these changes, commit them to the repository.
+5. **Preview Your Changes**: After making changes, you can preview how they look by opening the website locally. Run this command in the website's root directory:
+    ```py
+    python3 -m http.server 8000
+    ```
+    Then navigate to localhost:8000 in your browser to see the website.
+
+6. **Commit Your Changes**: After making these changes, commit them to the repository.
