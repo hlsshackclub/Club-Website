@@ -8,5 +8,10 @@
         "name": "Dravid Singh",
         "bio": "HLSS Hack Club President",
         "picture": "members/Dravid Singh/Smiley.png"
+    },
+    {
+        "name": "Your Name",
+        "bio": "Your brief bio",
+        "picture": "members/YourName/YourPicture.jpg"
     }
 ]
