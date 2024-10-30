@@ -23,31 +23,23 @@
     font-family: Kollektif, sans-serif;
 }
 
-html {
-    height: 100%;
-    overflow-x: hidden; /* Prevent horizontal overflow */
-}
-
 body {
     height: 100%;
-    overflow-x: hidden; /* Prevent horizontal overflow */
-    font-family: Arial, sans-serif;
+    margin: 0 100px;
+    font-family: Kollektif, sans-serif;
     margin: 0;
     background-color: #1c1c1c;
     color: white;
 }
 
-main {
-    position: relative;
-    z-index: 1; /* Ensure main content does not cover the navbar */
-    padding: 0 2rem 0 2rem;
+#header-container {
+    display: inline;
 }
 
 header {
     background: linear-gradient(45deg, #844ef2, #ee874d);
     color: white;
     text-align: center;
-    overflow: visible;
 }
 
 .title {
@@ -87,20 +79,22 @@ header {
 }
 
 .cards {
-    display: flex;
-    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
     padding: 20px;
-    gap: 20px; /* Add space between the cards */
+    max-width: calc(300px * 5);
+    margin: 0 auto;
 }
 
 .card {
     background-color: #333;
     padding: 20px;
     border-radius: 10px;
-    flex: 1 1 30vw; /* Allow cards to grow and shrink, with a minimum width of 300px */
-    max-width: 40%; /* Set a maximum width for larger screens */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .card h3 {
@@ -109,22 +103,28 @@ header {
 }
 
 .card img {
-    max-width: 20vw;
-    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 .card p {
-    margin: 0 0 0 20px;
+    margin-top: 15px;
+    text-align: center;
 }
 
 .card a {
     color: inherit; /* blue colors for links too */
     text-decoration: inherit; /* no underline */
+    text-align: center;
 }
 
 .sub-card {
     display: flex;
-    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
 }
 
 /* Gallery section */
