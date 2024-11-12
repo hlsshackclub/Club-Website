@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    background-color: #1c1c1c;
+    color: white;
+    font-family: KollektifBold, sans-serif;
+}
+
+header {
+    background: linear-gradient(45deg, #844ef2, #ee874d);
+    color: white;
+    text-align: center;
+    overflow: visible;
+    margin: 0;
+}
+
+header h1 {
+    color: #fff;
+    margin: 0;
+    font-size: 3rem;
+    padding: 2rem;
+}
+
+main {
+    margin: 10px;
+    font-size: 20px;
+}
